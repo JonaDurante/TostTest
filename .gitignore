@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TostTest/.vs/TostTest
+/TostTest/TostTest/bin/Debug/net6.0
+/TostTest/TostTest/obj
+/TostTest/TostTestData/obj
+/TostTest/TostTest.Database/obj/Debug/net6.0
+/TostTest/TostTest.Database/obj
