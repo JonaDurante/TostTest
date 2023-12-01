@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using TostTest.App.Entities;
 
 namespace TostTest.Controllers
 {
@@ -10,33 +9,27 @@ namespace TostTest.Controllers
     {
         // GET: api/<Events>
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<Event> ListarEventos()
         {
-            return new string[] { "GetOk" };
-        }
-
-        // GET api/<Events>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
+            var data = new List<Event>(); // Datos que quieres devolver
+            return data;
         }
 
         // POST api/<Events>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void CrearEvento([FromBody] Event value)
         {
         }
 
         // PUT api/<Events>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void EditarEvento(int id, [FromBody] Event value)
         {
         }
 
         // DELETE api/<Events>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public void EliminarEvento(int id)
         {
         }
     }
